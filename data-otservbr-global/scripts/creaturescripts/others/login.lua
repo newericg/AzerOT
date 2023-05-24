@@ -58,8 +58,8 @@ function playerLogin.onLogin(player)
 	end
 	-- Premium Ends Teleport to Temple, change addon (citizen) houseless
 	local defaultTown = "Stormwind" -- default town where player is teleported if his home town is in premium area
-	local freeTowns = {"Ab'Dendriel", "Carlin", "Kazordoon", "Thais", "Venore", "Rookgaard", "Dawnport", "Dawnport Tutorial", "Island of Destiny"} -- towns in free account area
-
+	local freeTowns = {"Stormwind"} -- towns in free account area
+	
 	if isPremium(player) == false and isInArray(freeTowns, player:getTown():getName()) == false then
 		local town = player:getTown()
 		local sex = player:getSex()
